@@ -714,6 +714,8 @@ function registerSearch(app) {
       } else {
         res.json(data)
       }
+    }).catch((e) => {
+      console.log('catch:' + e)
     })
   })
 }
